@@ -74,7 +74,7 @@
 </style>
 <?php }?>
 
-<!-- firts row of cards-->
+<!-- firts row of cards !!!!!!-->
 
 <div class="container my-5">
   <div class="row px-0 mx-0">
