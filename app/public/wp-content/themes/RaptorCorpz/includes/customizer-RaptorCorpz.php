@@ -90,6 +90,49 @@ new \Kirki\Section(
 	]
 );
 
+//SECTION -- GARENTEES CARD ROW
+
+new \Kirki\Section(
+	'RaptorCorpz_garentees_garentees_card_row_section',
+	[
+		'title'       => esc_html__( 'garentees_card Row', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your garentees_card row', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 3,
+	]
+);
+
+//SECTION -- GARENTEES CARD1 DETAILS
+new \Kirki\Section(
+	'RaptorCorpz_garentees_card1_section',
+	[
+		'title'       => esc_html__( 'Garentees card 1 Details', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 4,
+	]
+);
+//SECTION -- GARENTEES CARD2 DETAILS
+new \Kirki\Section(
+	'RaptorCorpz_garentees_card2_section',
+	[
+		'title'       => esc_html__( 'Garentees card 2 Details', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 4,
+	]
+);
+//SECTION -- GARENTEES CARD3 DETAILS
+new \Kirki\Section(
+	'RaptorCorpz_garentees_card3_section',
+	[
+		'title'       => esc_html__( 'Garentees card 3 Details', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 4,
+	]
+);
+
 
 //BANNER DETAILS -- FIELDS
 
@@ -544,6 +587,63 @@ new \Kirki\Field\Checkbox_Switch(
 		'choices'     => [
 			'on'  => esc_html__( 'Enable', 'RaptorCorpz' ),
 			'off' => esc_html__( 'Disable', 'RaptorCorpz' ),
+		],
+	]
+);
+
+//GARENTEES CARD ROW -- FIELDS
+new \Kirki\Field\Checkbox_Switch(
+	[
+		'settings'    => 'garentees_card_row_switch_setting',
+		'label'       => esc_html__( 'Toggle garentees card Row', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Switch that enables you to show or not show the garentees card row', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card_row_section',
+		'default'     => 'on',
+		'choices'     => [
+			'on'  => esc_html__( 'Enable', 'RaptorCorpz' ),
+			'off' => esc_html__( 'Disable', 'RaptorCorpz' ),
+		],
+	]
+);
+
+new \Kirki\Field\Slider(
+	[
+		'settings'    => 'num_garentees_cards',
+		'label'       => esc_html__( 'Number of garentees cards', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card_row_section',
+		'default'     => 3,
+		'choices'     => [
+			'min'  => 1,
+			'max'  => 3,
+			'step' => 1,
+		],
+	]
+);
+
+new \Kirki\Field\Number(
+	[
+		'settings' => 'garentees_card_height',
+		'label'    => esc_html__( 'Garentees card Height', 'RaptorCorpz' ),
+		'section'  => 'RaptorCorpz_garentees_card_row_section',
+		'default'  => 0,
+		'choices'  => [
+			'min'  => 0,
+			'max'  => 10000,
+			'step' => 1,
+		],
+	]
+);
+
+new \Kirki\Field\Number(
+	[
+		'settings' => 'garentees_card_width',
+		'label'    => esc_html__( 'Garentees car Width', 'RaptorCorpz' ),
+		'section'  => 'RaptorCorpz_garentees_card_row_section',
+		'default'  => 0,
+		'choices'  => [
+			'min'  => 0,
+			'max'  => 10000,
+			'step' => 1,
 		],
 	]
 );

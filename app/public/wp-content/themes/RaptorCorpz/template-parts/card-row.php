@@ -73,14 +73,18 @@
     }
 </style>
 <?php }?>
+
 <!-- firts row of cards-->
-<?php 
-    if($num_cards==3){
-        ?>
+
 <div class="container my-5">
   <div class="row px-0 mx-0">
     <div class="card-group">
-      <div class="col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2">
+    <?php if($num_cards>=1): ?>
+      <div class="
+          <?php if($num_cards==1){ echo("col-lg-6 p-3 offset-lg-3 col-md-8 offset-md-2");}
+          elseif($num_cards==2){ echo("col-xl-4 p-3 offset-xl-2 col-sm-8 offset-sm-2");}
+          elseif($num_cards==3){ echo("col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2");};?>
+        ">
         <div class="card">
           <img src="<?php echo esc_url( $card1_image ); ?>" class="card-img " alt="...">
           <div class="card-img-overlay">
@@ -102,6 +106,8 @@
           </div>
         </div>
       </div>
+      <?php endif; ?>
+      <?php if($num_cards>=2): ?>
       <div class="col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2">
       <div class="card">
           <img src="<?php echo esc_url( $card2_image ); ?>" class="card-img " alt="...">
@@ -124,6 +130,8 @@
           </div>
         </div>
       </div>
+      <?php endif;?>
+      <?php if($num_cards>=3): ?>
       <div class="col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2">
         <div class="card">
             <img src="<?php echo esc_url( $card3_image ); ?>" class="card-img " alt="...">
@@ -148,95 +156,10 @@
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </div>
-        <?php
-        
-    }elseif($num_cards==2){
-        ?>
-<div class="container my-5">
-  <div class="row px-0 mx-0 ">
-    <div class="card-group">
-      <div class="col-xl-4 p-3 offset-xl-2 col-sm-8 offset-sm-2">
-      <div class="card">
-          <img src="<?php echo esc_url( $card1_image ); ?>" class="card-img " alt="...">
-          <div class="card-img-overlay">
-            <div class="row px-0 mx-0">
-              <h3 style="color:<?php echo get_theme_mod( 'card1_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card1_title"><?php echo wp_kses_post($card1_title)?></h3>
-            </div>
-            <div class="card-content">
-              <div class="row px-0 mx-0 pb-3">
-                <button type="button " class="btn btn-outline-dark">
-                    <?php echo($card1_button_text)?>
-                </button>
-              </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card1_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                    <?php echo wp_kses_post($card1_text)?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 p-3 m-xl-0 col-md-8 offset-md-2">
-      <div class="card">
-          <img src="<?php echo esc_url( $card2_image ); ?>" class="card-img " alt="...">
-          <div class="card-img-overlay">
-            <div class="row px-0 mx-0">
-              <h3 style="color:<?php echo get_theme_mod( 'card2_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card2_title"><?php echo wp_kses_post($card2_title)?></h3>
-            </div>
-            <div class="card-content">
-              <div class="row px-0 mx-0 pb-3">
-                <button type="button " class="btn btn-outline-dark">
-                    <?php echo($card2_button_text)?>
-                </button>
-              </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card2_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                    <?php echo wp_kses_post($card2_text)?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        <?php
-    }elseif($num_cards==1){
-        ?>
-<div class="container my-5">
-  <div class="row px-0 mx-0 ">
-    <div class="card-group">
-      <div class="col-lg-6 p-3 offset-lg-3 col-md-8 offset-md-2">
-      <div class="card">
-          <img src="<?php echo esc_url( $card1_image ); ?>" class="card-img " alt="...">
-          <div class="card-img-overlay">
-            <div class="row px-0 mx-0">
-              <h3 style="color:<?php echo get_theme_mod( 'card1_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card1_title"><?php echo wp_kses_post($card1_title)?></h3>
-            </div>
-            <div class="card-content">
-              <div class="row px-0 mx-0 pb-3">
-                <button type="button " class="btn btn-outline-dark">
-                    <?php echo($card1_button_text)?>
-                </button>
-              </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card1_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                    <?php echo wp_kses_post($card1_text)?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        <?php 
-    }
-?>
+
+
 <?php endif; ?>
