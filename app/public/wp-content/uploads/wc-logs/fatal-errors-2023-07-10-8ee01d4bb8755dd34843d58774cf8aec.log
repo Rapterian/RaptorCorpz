@@ -1,0 +1,14 @@
+2023-07-10T21:22:46+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1691): wc_get_template('single-product/...')
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-hook.php(308): woocommerce_show_product_sale_flash('')
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\single-product.php(55): do_action('woocommerce_bef...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#7 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#8 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#9 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 25
+

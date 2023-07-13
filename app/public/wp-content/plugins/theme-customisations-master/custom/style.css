@@ -1,0 +1,185 @@
+/**
+ * Add any custom CSS here.
+ *
+ * This file will be loaded after all other theme stylesheets.
+ */
+ .woocommerce-MyAccount-navigation{
+    list-style-type: none;
+    width: 20% !important;
+    margin-top: 30px;
+}
+.woocommerce-MyAccount-navigation li{
+    list-style: none;
+    border-bottom:1px rgba(0, 0, 0, 0.212) solid;
+}
+
+.woocommerce-MyAccount-navigation li:last-child{
+
+    border-bottom:none;
+}
+
+.woocommerce-MyAccount-navigation a:hover{
+    text-decoration: underline;
+}
+.woocommerce-MyAccount-content {
+    height: 70vh;
+    width: 80% !important;
+    border-left: 1px grey solid;
+    padding-left: 2em;
+    padding-right: 4em;
+
+}
+.woocommerce-billing-fields {
+    border: 2px black solid;
+    padding: 12px;
+    margin-left: 12px;
+}
+h3#order_review_heading {
+    margin-left: 12px;
+    margin-top: 25px;
+}
+div#order_review {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.col-2 {
+    border: 2px black dotted;
+    padding: 12px;
+    margin: 8px;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: right;
+    width: 45%;
+}
+input#coupon_code {
+    width: fit-content;
+}
+.u-column1.col-1.woocommerce-Address {
+    border: 1px black solid;
+    padding: 12px;
+    margin: 8px;
+}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: left;
+    width: 45%;
+}
+.wc-block-sort-select.wc-block-components-sort-select.wc-block-product-sort-select.wc-block-components-product-sort-select {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 12px;
+}
+select#wc-block-components-sort-select__select-0 {
+    border-radius: 20px;
+    text-align: center;
+}
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+    position: absolute;
+    right: 0.7em;
+    top: 0.1em;
+    cursor: pointer;
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    border: 1px solid #d3ced2;
+    padding: 20px;
+    margin: 12px 12px;
+    text-align: left;
+    border-radius: 5px;
+}
+.woocommerce h2 {
+    margin-left: 12px;
+    margin-top: 30px;
+}
+@media only screen and (min-width: 992px) {
+    input#username {
+        width: 30%;
+    }
+    input#password {
+        width: 30%;
+    }
+    input#password_current {
+        width: 30%;
+    }
+    input#password_1 {
+        width: 30%;
+    }
+    input#password_2 {
+        width: 30%;
+    }
+    .woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+        position: absolute;
+        right: 71%;
+        top: 0.1em;
+        cursor: pointer;
+    }
+    .woocommerce-MyAccount-navigation ul{
+        padding: 0;
+        width: fit-content;
+    }
+    .woocommerce-MyAccount-navigation a{
+        font-size: 1.5em;
+        color:black;
+        text-decoration: none;
+        align-content: center;
+    }
+    
+    
+}
+@media only screen and (max-width: 992px) {
+    
+    .woocommerce-MyAccount-navigation ul{
+        margin-top: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+        text-align: center;
+    }
+    .woocommerce-MyAccount-navigation li{
+        border-bottom: none;
+        display: inline;
+        margin: 5px;
+        
+    }
+    .woocommerce-MyAccount-navigation a{
+        font-size: 1.5em;
+        color:black;
+        text-decoration: none;
+    }
+    .woocommerce-MyAccount-navigation{
+        display: inline;
+        width: 100% !important;
+    }
+    .woocommerce-MyAccount-content {
+        margin-top: 30px;
+        height: 40vh;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .woocommerce-MyAccount-content {
+        border-left: none !important;
+        float: left !important;
+        margin-left: 12px !important; 
+    } 
+    .woocommerce .col2-set, .woocommerce-page .col2-set {
+        position: absolute;
+        right: 12px;
+        left: 12px;
+        margin-bottom: 12px;
+    }
+    .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+        float: left;
+        width: 90%;
+    }
+    .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+        float: left;
+        width: 90%;
+        
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    
+    
+    
+  }

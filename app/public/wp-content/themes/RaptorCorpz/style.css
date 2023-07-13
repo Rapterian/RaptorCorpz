@@ -1,0 +1,196 @@
+:root{
+    --color-nav:rgba(255,255,255,.55);
+    --color-navHover: rgba(255,255,255,0.75);
+}
+
+
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--color-navHover)!important;
+}
+/* Nav bar */
+li .dropdown-menu {
+    background-color: var(--bs-dark);
+}
+a.dropdown-item{
+    color: var(--color-nav);
+    font-size: 1.5em;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    color: var(--color-navHover);
+    background-color: inherit;
+    font-size: 1.6em;
+}
+
+
+ a.navbar-brand{
+    font-size: 3em;
+    font-weight:700 ;
+    color: white !important;
+}
+.mobile-menu{
+    visibility: hidden !important;
+}
+
+  .nav-link{
+    font-size: 1.5em;
+    color:var(--color-nav);
+    margin-right: 1em;
+    margin-left: 1em;
+}
+  .nav-link:hover{
+    color: var(--color-navHover);
+    background-color: inherit;
+    
+}
+
+
+/* Top banner */
+.banner{
+    position: relative;
+    /* height: 80vh; */
+    /* width: 99vw; */
+    /* background-image: url("http://raptor-corpz.local/wp-content/uploads/2023/06/pexels-оля-жеребцова-4223655-scaled.jpg"); */
+    background-size: cover;
+    background-position: top;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 99vw;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .title {
+    position: absolute;
+} */
+
+.banner h1 {
+    font-size: 3em;
+    color: white;
+    z-index: 1;
+    font-weight: 800;
+    vertical-align: middle;
+}
+.banner h2 {
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    margin-top: 4vh;
+}
+
+.title a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 3px solid #d3d3d371;
+}
+.title a:hover{
+    text-decoration: none;
+    color: #d3d3d371;
+    border-bottom: none 
+}
+.title button{
+    margin-top: 2em;
+    /* margin-right: 2vw;
+    display: inline block;
+    width: 12vw; */
+}
+
+/* containers*/
+/* .card{
+    height: 250px;
+} */
+
+.card img{
+    opacity: 0.6;
+}
+
+
+.card-group p{
+    font-weight: 400 !important;
+    /* bottom: 4em;
+    position: absolute; */
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    /* width: 70%;
+    margin-top: 2em;
+    margin-bottom: 6em; */
+}
+
+.card-group button{
+    /* width: 9vw;
+    margin-top: 24vh; */
+    font-weight: 800 !important;
+    background-color: white;
+}
+.card-content{
+    position: absolute;
+    bottom: 10%;
+    padding-right: 30%;
+}
+
+#SpecialOffers{
+    /* background-image: url("http://raptor-corpz.local/wp-content/uploads/2023/06/black-and-white-girl.jpg"); */
+    background-size: cover;
+    background-position-x: right;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    z-index: -4;
+    opacity: 0.9;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+#SpecialOffers .content{
+    vertical-align: middle;
+    margin-right:20vw;
+    color: white;
+}
+
+#Garentees .card{
+    border: none;
+}
+#Garentees .card img{
+    border: none;
+    width: 30%;
+    align-self: center;
+    opacity: 1;
+}
+
+.point{
+    width: 70vw;
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+    
+    
+}
+@media only screen and (max-width: 992px) {
+    .mobile-menu{
+        visibility: visible !important;
+    }
+    .dt-sticky{
+        position: absolute ;
+    }
+    .dt-menu{
+        visibility: hidden !important;
+    }
+    .nav-link{
+        font-size: 1.4em;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .point{
+        width: auto;
+    }
+    
+    
+  }
