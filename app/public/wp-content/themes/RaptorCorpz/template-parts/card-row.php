@@ -97,8 +97,8 @@
                     <?php echo($card1_button_text)?>
                 </button>
               </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card1_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
+              <div style="color:<?php echo get_theme_mod( 'card1_text_color_setting_rgba', '#ffffff' ); ?>" class="row px-0 mx-0">
+                <p  class="card-text">
                     <?php echo wp_kses_post($card1_text)?>
                 </p>
               </div>
@@ -121,8 +121,8 @@
                     <?php echo($card2_button_text)?>
                 </button>
               </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card2_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
+              <div style="color:<?php echo get_theme_mod( 'card2_text_color_setting_rgba', '#ffffff' ); ?>" class="row px-0 mx-0">
+                <p  class="card-text">
                     <?php echo wp_kses_post($card2_text)?>
                 </p>
               </div>
@@ -145,8 +145,8 @@
                         <?php echo($card3_button_text)?>
                     </button>
                 </div>
-                <div class="row px-0 mx-0">
-                    <p style="color:<?php echo get_theme_mod( 'card3_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
+                <div style="color:<?php echo get_theme_mod( 'card3_text_color_setting_rgba', '#ffffff' ); ?>" class="row px-0 mx-0">
+                    <p  class="card-text">
                         <?php echo wp_kses_post($card3_text)?>
                     </p>
                 </div>

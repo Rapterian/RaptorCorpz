@@ -369,7 +369,7 @@ new \Kirki\Field\Image(
 		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
 		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
 		'section'     => 'RaptorCorpz_card2_section',
-		'default'     => '',
+		'default'     => 'red',
 	]
 );
 new \Kirki\Field\Editor(
