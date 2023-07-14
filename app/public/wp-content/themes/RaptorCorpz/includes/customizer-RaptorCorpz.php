@@ -55,7 +55,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Card 2 Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your card details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 4,
+		'priority'    => 5,
 	]
 );
 //SECTION -- CARD3 DETAILS
@@ -65,7 +65,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Card 3 Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your card details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 4,
+		'priority'    => 6,
 	]
 );
 //SECTION -- CONTENT DETAILS
@@ -75,7 +75,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Content Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your content details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 5,
+		'priority'    => 7,
 	]
 );
 
@@ -86,7 +86,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Special Offers Banner', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your Special Offers Banner', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 5,
+		'priority'    => 8,
 	]
 );
 
@@ -98,7 +98,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Garentees Row', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your garentees_card row', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 3,
+		'priority'    => 9,
 	]
 );
 
@@ -109,7 +109,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Garentees card 1 Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 4,
+		'priority'    => 10,
 	]
 );
 //SECTION -- GARENTEES CARD2 DETAILS
@@ -119,7 +119,7 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Garentees card 2 Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 4,
+		'priority'    => 11,
 	]
 );
 //SECTION -- GARENTEES CARD3 DETAILS
@@ -129,9 +129,20 @@ new \Kirki\Section(
 		'title'       => esc_html__( 'Garentees card 3 Details', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
-		'priority'    => 4,
+		'priority'    => 12,
 	]
 );
+//SECTION -- GARENTEES CARD4 DETAILS
+new \Kirki\Section(
+	'RaptorCorpz_garentees_card4_section',
+	[
+		'title'       => esc_html__( 'Garentees card 4 Details', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your Garentees card details', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 12,
+	]
+);
+
 
 
 //BANNER DETAILS -- FIELDS
@@ -635,3 +646,99 @@ new \Kirki\Field\Number(
 		],
 	]
 );
+//GARENTEES CARD 1 DETAILS -- FIELDS
+
+new \Kirki\Field\Image(
+	[
+		'settings'    => 'garentees_card1_image_setting_url',
+		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card1_section',
+		'default'     => '',
+	]
+);
+
+new \Kirki\Field\Textarea(
+	[
+		'settings'    => 'garentees_card1_text',
+		'label'       => esc_html__( 'garentees_card 1 text', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes garentees_card 1 text.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card1_section',
+		'default'     => '',
+	]
+);
+
+
+//GARENTEES CARD 2 DETAILS -- FIELDS
+
+new \Kirki\Field\Image(
+	[
+		'settings'    => 'garentees_card2_image_setting_url',
+		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card2_section',
+		'default'     => '',
+	]
+);
+
+
+new \Kirki\Field\Textarea(
+	[
+		'settings'    => 'garentees_card2_text',
+		'label'       => esc_html__( 'Garentees card 2 text', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes garentees_card 2 text.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card2_section',
+		'default'     => '',
+	]
+);
+;
+
+
+//GARENTEES CARD 3 DETAILS -- FIELDS
+
+new \Kirki\Field\Image(
+	[
+		'settings'    => 'garentees_card3_image_setting_url',
+		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card3_section',
+		'default'     => '',
+	]
+);
+
+
+new \Kirki\Field\Textarea(
+	[
+		'settings'    => 'garentees_card3_text',
+		'label'       => esc_html__( 'Garentees card 3 text', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes garentees_card 3 text.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card3_section',
+		'default'     => '',
+	]
+);
+
+
+//GARENTEES CARD 4 DETAILS -- FIELDS
+
+new \Kirki\Field\Image(
+	[
+		'settings'    => 'garentees_card4_image_setting_url',
+		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card4_section',
+		'default'     => '',
+	]
+);
+
+
+new \Kirki\Field\Textarea(
+	[
+		'settings'    => 'garentees_card4_text',
+		'label'       => esc_html__( 'Garentees card 4 text', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes garentees_card 4 text.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_garentees_card4_section',
+		'default'     => '',
+	]
+);
+
+

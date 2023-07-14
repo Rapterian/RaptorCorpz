@@ -2014,3 +2014,48 @@ Stack trace:
 [13-Jul-2023 11:22:51 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [13-Jul-2023 11:25:18 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [13-Jul-2023 11:25:40 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:17:38 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:21:57 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:22:30 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:23:34 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:25:02 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:26:09 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:26:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function #81d742() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+[14-Jul-2023 13:26:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function #dd3333() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+[14-Jul-2023 13:26:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function #eeee22() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+[14-Jul-2023 13:27:05 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:29:47 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:30:41 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:32:56 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:34:41 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[14-Jul-2023 13:36:45 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905

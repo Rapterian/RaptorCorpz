@@ -1,0 +1,36 @@
+2023-07-14T13:26:10+00:00 CRITICAL Uncaught Error: Call to undefined function #81d742() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+
+2023-07-14T13:26:28+00:00 CRITICAL Uncaught Error: Call to undefined function #dd3333() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+
+2023-07-14T13:26:36+00:00 CRITICAL Uncaught Error: Call to undefined function #eeee22() in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php:80
+Stack trace:
+#0 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template.php(718): load_template('C:\\Users\\dekoc\\...', false, Array)
+#2 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\index.php(69): get_template_part('template-parts/...', 'row')
+#4 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\dekoc\\...')
+#5 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-blog-header.php(19): require_once('C:\\Users\\dekoc\\...')
+#6 C:\Users\dekoc\Local Sites\raptor-corpz\app\public\index.php(17): require('C:\\Users\\dekoc\\...')
+#7 {main}
+  thrown in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 80
+
