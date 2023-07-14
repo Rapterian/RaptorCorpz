@@ -155,7 +155,7 @@
           'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
           'container'       => 'div',
           'container_class' => 'navbar bg-dark ',
-          'container_id'    => 'navbarLeft',
+          'container_id'    => 'navbarTop',
           'menu_class'      => 'navbar-nav my-2 my-lg-0 navbar-nav-scroll ',
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),

@@ -143,6 +143,16 @@ new \Kirki\Section(
 	]
 );
 
+//SECTION -- FOOTER 
+new \Kirki\Section(
+	'RaptorCorpz_footer_section',
+	[
+		'title'       => esc_html__( 'Footer', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Use this section to edit your footer', 'RaptorCorpz' ),
+		'panel'       => 'RaptorCorpz_theme_options',
+		'priority'    => 13,
+	]
+);
 
 
 //BANNER DETAILS -- FIELDS
@@ -740,5 +750,72 @@ new \Kirki\Field\Textarea(
 		'default'     => '',
 	]
 );
-
+//FOOTER -- FIELDS
+new \Kirki\Field\Checkbox_Switch(
+	[
+		'settings'    => 'footer_switch_setting',
+		'label'       => esc_html__( 'Toggle garentees card Row', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Switch that enables you to show or not show the footer', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => 'on',
+		'choices'     => [
+			'on'  => esc_html__( 'Enable', 'RaptorCorpz' ),
+			'off' => esc_html__( 'Disable', 'RaptorCorpz' ),
+		],
+	]
+);
+new \Kirki\Field\Color(
+	[
+		'settings'    => 'footer_background_color_setting_rgba',
+		'label'       => __( 'Color Control (rgba)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Advanced color control with alpha channel.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => 'grey',
+		'choices'     => [
+			'alpha' => true,
+		],
+	]
+);
+new \Kirki\Field\Text(
+	[
+		'settings'    => 'footer_text',
+		'label'       => esc_html__( 'Footer text', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes the footer text.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => '© 2022 Company, Inc',
+	]
+);
+new \Kirki\Field\Color(
+	[
+		'settings'    => 'footer_text_color_setting_rgba',
+		'label'       => __( 'Color Control (rgba)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Advanced color control with alpha channel.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => '#ffffff',
+		'choices'     => [
+			'alpha' => true,
+		],
+	]
+);
+new \Kirki\Field\Text(
+	[
+		'settings'    => 'footer_title',
+		'label'       => esc_html__( 'Footer title', 'RaptorCorpz' ),
+		'description' => esc_html__( 'This is an editor control that changes the footer title.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => 'Fortitude',
+	]
+);
+new \Kirki\Field\Color(
+	[
+		'settings'    => 'footer_title_color_setting_rgba',
+		'label'       => __( 'Color Control (rgba)', 'RaptorCorpz' ),
+		'description' => esc_html__( 'Advanced color control with alpha channel.', 'RaptorCorpz' ),
+		'section'     => 'RaptorCorpz_footer_section',
+		'default'     => '#ffffff',
+		'choices'     => [
+			'alpha' => true,
+		],
+	]
+);
 
