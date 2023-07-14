@@ -9,7 +9,7 @@
 <?php
     $banner_image = get_theme_mod( 
       'banner_image_setting_url', 
-      'http://raptor-corpz.local/wp-content/uploads/2023/06/pexels-оля-жеребцова-4223655-scaled.jpg' 
+      'http://local/wp-content/uploads/2023/07/girl-in-sunglasses-scaled.jpg' 
   );
   $banner_title = get_theme_mod( 
       'banner_title', 

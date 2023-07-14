@@ -93,9 +93,9 @@ new \Kirki\Section(
 //SECTION -- GARENTEES CARD ROW
 
 new \Kirki\Section(
-	'RaptorCorpz_garentees_garentees_card_row_section',
+	'RaptorCorpz_garentees_card_row_section',
 	[
-		'title'       => esc_html__( 'garentees_card Row', 'RaptorCorpz' ),
+		'title'       => esc_html__( 'Garentees Row', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Use this section to edit your garentees_card row', 'RaptorCorpz' ),
 		'panel'       => 'RaptorCorpz_theme_options',
 		'priority'    => 3,
@@ -142,7 +142,7 @@ new \Kirki\Field\Image(
 		'label'       => esc_html__( 'Image Control (URL)', 'RaptorCorpz' ),
 		'description' => esc_html__( 'The saved value will be the URL.', 'RaptorCorpz' ),
 		'section'     => 'RaptorCorpz_banner_section',
-		'default'     => '',
+		'default'     => 'http://local/wp-content/uploads/2023/07/girl-in-sunglasses-scaled.jpg',
 	]
 );
 new \Kirki\Field\Editor(
@@ -611,35 +611,23 @@ new \Kirki\Field\Slider(
 		'settings'    => 'num_garentees_cards',
 		'label'       => esc_html__( 'Number of garentees cards', 'RaptorCorpz' ),
 		'section'     => 'RaptorCorpz_garentees_card_row_section',
-		'default'     => 3,
+		'default'     => 4,
 		'choices'     => [
 			'min'  => 1,
-			'max'  => 3,
+			'max'  => 4,
 			'step' => 1,
 		],
 	]
 );
 
-new \Kirki\Field\Number(
-	[
-		'settings' => 'garentees_card_height',
-		'label'    => esc_html__( 'Garentees card Height', 'RaptorCorpz' ),
-		'section'  => 'RaptorCorpz_garentees_card_row_section',
-		'default'  => 0,
-		'choices'  => [
-			'min'  => 0,
-			'max'  => 10000,
-			'step' => 1,
-		],
-	]
-);
+
 
 new \Kirki\Field\Number(
 	[
 		'settings' => 'garentees_card_width',
-		'label'    => esc_html__( 'Garentees car Width', 'RaptorCorpz' ),
+		'label'    => esc_html__( 'Garentees card Width', 'RaptorCorpz' ),
 		'section'  => 'RaptorCorpz_garentees_card_row_section',
-		'default'  => 0,
+		'default'  => 300,
 		'choices'  => [
 			'min'  => 0,
 			'max'  => 10000,

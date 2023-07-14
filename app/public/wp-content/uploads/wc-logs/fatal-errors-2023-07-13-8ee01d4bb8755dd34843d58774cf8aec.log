@@ -4,3 +4,7 @@
 
 2023-07-13T10:52:36+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\card-row.php on line 84
 
+2023-07-13T11:12:08+00:00 CRITICAL syntax error, unexpected token "elseif", expecting end of file in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 96
+
+2023-07-13T11:12:50+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 113
+

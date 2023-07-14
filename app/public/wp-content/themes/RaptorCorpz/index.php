@@ -63,34 +63,8 @@
   </div>
 <?php endif; ?>
 
-<!-- garentees-->
-<div class="container-md my-5 py-5" id="Garentees">
-  <div class="row justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/globe-free-img.png" class="card-img-top " alt="...">
-      <div class="card-body">
-        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/lock-free-img.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/quality-free-img.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/tag-free-img.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<?php get_footer();
+
+<?php 
+  get_template_part('template-parts/garentees','row'); 
+  get_footer();

@@ -11,8 +11,7 @@
 <?php 
 //CARD ROW 
     $num_cards=get_theme_mod( 'num_garentees_cards', 3 );
-    $card_height = get_theme_mod( 'garentees_card_height', 'auto');
-    $card_width = get_theme_mod( 'garentees_card_width', 'auto');
+    $card_width = get_theme_mod( 'garentees_card_width', '300');
     //CARD 1 DETAILS
     $card1_image = get_theme_mod( 
         'card1_image_setting_url', 
@@ -64,102 +63,44 @@
         'card3_button_text', 
         'Shop Now' 
     );
-?>
-<?php if($card_height>0){?>
-<style>
-    .card img{
-        height: <?php echo $card_height; ?>px !important;
-        width: <?php echo $card_width; ?>px !important;
-    }
-</style>
-<?php }?>
+?>  
 
-<!-- firts row of cards !!!!!!-->
-
-<div class="container my-5">
-  <div class="row px-0 mx-0">
-    <div class="card-group">
-    <?php if($num_cards>=1): ?>
-      <div class="
-          <?php if($num_cards==1){ echo("col-lg-6 p-3 offset-lg-3 col-md-8 offset-md-2");}
-          elseif($num_cards==2){ echo("col-xl-4 p-3 offset-xl-2 col-sm-8 offset-sm-2");}
-          elseif($num_cards==3){ echo("col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2");};?>
-        ">
-        <div class="card">
-          <img src="<?php echo esc_url( $card1_image ); ?>" class="card-img " alt="...">
-          <div class="card-img-overlay">
-            <div class="row px-0 mx-0">
-              <h3 style="color:<?php echo get_theme_mod( 'card1_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card1_title"><?php echo wp_kses_post($card1_title)?></h3>
-            </div>
-            <div class="card-content">
-              <div class="row px-0 mx-0 pb-3">
-                <button type="button " class="btn btn-outline-dark">
-                    <?php echo($card1_button_text)?>
-                </button>
-              </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card1_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                    <?php echo wp_kses_post($card1_text)?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- garentees-->
+<div class="container-md my-5 py-5" id="Garentees">
+  <div class="row justify-content-center">
+  <?php if($num_cards>=1): ?>
+    <div class="card" style="width: <?php echo $card_width?>px;">
+      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/globe-free-img.png" class="card-img-top " alt="...">
+      <div class="card-body">
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
-      <?php endif; ?>
-      <?php if($num_cards>=2): ?>
-      <div class="col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2">
-      <div class="card">
-          <img src="<?php echo esc_url( $card2_image ); ?>" class="card-img " alt="...">
-          <div class="card-img-overlay">
-            <div class="row px-0 mx-0">
-              <h3 style="color:<?php echo get_theme_mod( 'card2_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card2_title"><?php echo wp_kses_post($card2_title)?></h3>
-            </div>
-            <div class="card-content">
-              <div class="row px-0 mx-0 pb-3">
-                <button type="button " class="btn btn-outline-dark">
-                    <?php echo($card2_button_text)?>
-                </button>
-              </div>
-              <div class="row px-0 mx-0">
-                <p style="color:<?php echo get_theme_mod( 'card2_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                    <?php echo wp_kses_post($card2_text)?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <?php endif;?>
-      <?php if($num_cards>=3): ?>
-      <div class="col-lg-4 p-3 offset-lg-0 col-md-8 offset-md-2">
-        <div class="card">
-            <img src="<?php echo esc_url( $card3_image ); ?>" class="card-img " alt="...">
-            <div class="card-img-overlay">
-                <div class="row px-0 mx-0">
-                <h3 style="color:<?php echo get_theme_mod( 'card3_title_color_setting_rgba', '#ffffff' ); ?>" class="card-title pb-2 mb-1 pt-2" id="card3_title"><?php echo wp_kses_post($card3_title)?></h3>
-                </div>
-                <div class="card-content">
-                <div class="row px-0 mx-0 pb-3">
-                    <button type="button " class="btn btn-outline-dark">
-                        <?php echo($card3_button_text)?>
-                    </button>
-                </div>
-                <div class="row px-0 mx-0">
-                    <p style="color:<?php echo get_theme_mod( 'card3_text_color_setting_rgba', '#ffffff' ); ?>" class="card-text">
-                        <?php echo wp_kses_post($card3_text)?>
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <?php endif; ?>
     </div>
+    <?php endif; ?>
+    <?php if($num_cards>=2): ?>
+    <div class="card" style="width: <?php echo $card_width?>px;">
+      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/lock-free-img.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <?php endif; ?>
+    <?php if($num_cards>=3): ?>
+    <div class="card" style="width: <?php echo $card_width?>px;">
+      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/quality-free-img.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <?php endif; ?>
+    <?php if($num_cards>=4): ?>
+    <div class="card" style="width: 18rem;">
+      <img src="http://raptor-corpz.local/wp-content/uploads/2023/06/tag-free-img.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <?php endif; ?>
   </div>
 </div>
-
 
 <?php endif; ?>

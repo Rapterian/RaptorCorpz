@@ -2006,3 +2006,11 @@ Stack trace:
 [13-Jul-2023 10:52:33 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\card-row.php on line 84
 [13-Jul-2023 10:52:36 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\card-row.php on line 84
 [13-Jul-2023 10:53:01 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:12:08 UTC] PHP Parse error:  syntax error, unexpected token "elseif", expecting end of file in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 96
+[13-Jul-2023 11:12:50 UTC] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-content\themes\RaptorCorpz\template-parts\garentees-row.php on line 113
+[13-Jul-2023 11:14:07 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:16:28 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:18:09 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:22:51 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:25:18 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[13-Jul-2023 11:25:40 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\dekoc\Local Sites\raptor-corpz\app\public\wp-includes\class-wp-customize-widgets.php on line 905
