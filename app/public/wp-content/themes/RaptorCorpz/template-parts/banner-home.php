@@ -35,7 +35,7 @@
     <div class="banner" style="background-image: url('<?php echo esc_url( $banner_image ); ?>')">
     <div class="col-md-1"></div>
       <div class="col-md-6 col-sm-12 title ">
-        <h1 style="color:<?php echo get_theme_mod( 'title_color_setting_rgba', '#ffffff' ); ?>"><?php echo wp_kses_post($banner_title)?></h1>
+        <h1 style="color:<?php echo get_theme_mod( 'banner_title_color_setting_rgba', '#ffffff' ); ?>"><?php echo wp_kses_post($banner_title)?></h1>
         <h2 style="color:<?php echo get_theme_mod( 'subtitle_color_setting_rgba', '#ffffff' ); ?>"><?php echo wp_kses_post($banner_subtitle)?></h2>
         <button type="button" class="btn btn-outline-light"><?php echo wp_kses_post($banner_button1)?></button>
         <button type="button" class="btn btn-outline-light "><?php echo wp_kses_post($banner_button2)?></button>

@@ -177,11 +177,11 @@ new \Kirki\Field\Editor(
 );
 new \Kirki\Field\Color(
 	[
-		'settings'    => 'title_color_setting_rgba',
-		'label'       => __( 'Color Control (rgba)', 'RaptorCorpz' ),
+		'settings'    => 'banner_title_color_setting_rgba',
+		'label'       => __( 'Title Color Control (rgba)', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Advanced color control with alpha channel.', 'RaptorCorpz' ),
 		'section'     => 'RaptorCorpz_banner_section',
-		'default'     => '#0008DC',
+		'default'     => '#ffffff',
 		'choices'     => [
 			'alpha' => true,
 		],
@@ -200,7 +200,7 @@ new \Kirki\Field\Editor(
 new \Kirki\Field\Color(
 	[
 		'settings'    => 'subtitle_color_setting_rgba',
-		'label'       => __( 'Color Control (rgba)', 'RaptorCorpz' ),
+		'label'       => __( 'Subtitle Color Control (rgba)', 'RaptorCorpz' ),
 		'description' => esc_html__( 'Advanced color control with alpha channel.', 'RaptorCorpz' ),
 		'section'     => 'RaptorCorpz_banner_section',
 		'default'     => '#ffffff',
@@ -209,6 +209,8 @@ new \Kirki\Field\Color(
 		],
 	]
 );
+
+
 new \Kirki\Field\Text(
     [
         'settings'          => 'banner_button1',
